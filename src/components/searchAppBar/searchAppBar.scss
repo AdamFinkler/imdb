@@ -1,0 +1,18 @@
+.app-bar-container {
+  display: flex;
+  justify-content: space-between;
+  .filter-and-top-rated-container {
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    .top-rated {
+      &:hover {
+        font-size: large;
+      }
+    }
+  }
+}
+
+.search-icon {
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.movie-list-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  //   width: 80%;
+  //   overflow-y: auto;
+  padding: 20px 40px;
+}

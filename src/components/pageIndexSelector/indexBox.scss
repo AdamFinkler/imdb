@@ -1,0 +1,17 @@
+.index-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 30px;
+  width: 30px;
+  background: black;
+  cursor: pointer;
+}
+
+.black-border {
+  border: 3px solid black;
+}
+.orange-border {
+  border: 3px solid #ff7517;
+}
