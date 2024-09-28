@@ -36,14 +36,14 @@ const PopoverButton = ({handleAdult, handleYear}:popoverButtonProps) => {
       >
         <FilterListIcon />
       </IconButton>
-      {anchorEl && ( // Ensure anchorEl is non-null before passing it to GeneralPopover
+      {anchorEl && ( 
         <GeneralPopover
           anchorOriginVertical={"bottom"}
           anchorOriginHorizontal={"left"}
           transformOriginVertical={"top"}
           transformOriginHorizontal={"left"}
           component={<Filter handleClose={handleClose} handleAdult = {handleAdult} handleYear = {handleYear}/>}
-          anchor={anchorEl} // Ensure this is non-null
+          anchor={anchorEl} 
           isOpen={open}
           handleClose={handleClose}
         />

@@ -23,11 +23,9 @@ const MovieCard = ({
   genreIds,
   genreArray,
 }: movieProps) => {
-  // Check if the image exists and conditionally render the component
   const [open, setOpen] = React.useState(false);
   const handleModal = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  // console.log("genre array in movie card is: ", genreArray);
   if (!image) {
     return null;
   }
@@ -39,7 +37,7 @@ const MovieCard = ({
           onClick={handleModal}
           className="image"
           src={`https://image.tmdb.org/t/p/w300/${image}`}
-          alt={title} // Updated to avoid offensive content
+          alt={title} 
         />
       </div>
       <div className="details-container">

@@ -21,8 +21,8 @@ const style = {
   p: 4,
 };
 interface modalProps {
-  open: boolean; // Boolean to control the visibility of the modal
-  handleModal: () => void; // Function to handle opening the modal
+  open: boolean; 
+  handleModal: () => void; 
   handleClose: () => void;
   title: string;
   description: string;
@@ -46,11 +46,6 @@ export default function BasicModal({
   genreIds,
   genreArray,
 }: modalProps) {
-  // s
-//   const movieGenres = genreArray
-//     .filter((genre) => genreIds.includes(genre.id))
-//     .map((genre) => genre);
-//   console.log("movie genres in modal is: ", movieGenres);
 const movieGenres = [{id:1, name:'comedy'}, {id:2, name:'romance'}, {id:3, name:'action'}, {id:4, name:'adventure'}, {id:5, name:'horror'}]
   return (
     <div>
